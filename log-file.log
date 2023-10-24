@@ -1,0 +1,18 @@
+2023-10-24T14:38:08.709+02:00 DEBUG 8120 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-24T14:38:09.114+02:00 DEBUG 8120 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24T14:38:09.306+02:00 DEBUG 8120 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-10-24T14:38:09.397+02:00 DEBUG 8120 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-24T14:38:09.421+02:00 DEBUG 8120 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24T14:38:11.705+02:00  INFO 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T14:38:11.706+02:00 DEBUG 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-24T14:38:11.707+02:00 DEBUG 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-24T14:38:11.708+02:00 DEBUG 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-24T14:38:11.710+02:00 DEBUG 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@257b6cbc
+2023-10-24T14:38:11.713+02:00 DEBUG 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@755cc4f4
+2023-10-24T14:38:11.714+02:00 DEBUG 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24T14:38:11.715+02:00  INFO 8120 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-10-24T14:38:41.729+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/person", parameters={}
+2023-10-24T14:38:41.755+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.openclassroom.SafetyNetAlertsEndOfMission.controller.PersonController#persons()
+2023-10-24T14:38:41.800+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T14:38:41.814+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Person(firstName=John, lastName=Boyd, address=1509 Culver St, city=Culver, zip=97451, phone=841-874 (truncated)...]
+2023-10-24T14:38:41.846+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
