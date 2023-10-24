@@ -16,3 +16,148 @@
 2023-10-24T14:38:41.800+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2023-10-24T14:38:41.814+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Person(firstName=John, lastName=Boyd, address=1509 Culver St, city=Culver, zip=97451, phone=841-874 (truncated)...]
 2023-10-24T14:38:41.846+02:00 DEBUG 8120 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-24T14:57:38.375+02:00 DEBUG 16660 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-24T14:57:38.953+02:00 DEBUG 16660 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24T14:57:39.086+02:00 DEBUG 16660 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-10-24T14:57:39.118+02:00 DEBUG 16660 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-24T14:57:39.130+02:00 DEBUG 16660 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24T14:57:41.732+02:00  INFO 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T14:57:41.733+02:00 DEBUG 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-24T14:57:41.733+02:00 DEBUG 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-24T14:57:41.733+02:00 DEBUG 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-24T14:57:41.736+02:00 DEBUG 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@244fbeb5
+2023-10-24T14:57:41.737+02:00 DEBUG 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@202a1b6b
+2023-10-24T14:57:41.738+02:00 DEBUG 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24T14:57:41.740+02:00  INFO 16660 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-10-24T14:59:41.174+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/addperson", parameters={}
+2023-10-24T14:59:41.203+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24T14:59:41.209+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-10-24T14:59:41.211+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-10-24T14:59:41.235+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T14:59:41.243+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T14:59:41.290+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T14:59:41.292+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 14:59:41 CEST 2023, status=404, error=Not Found, path=/addperson}]
+2023-10-24T14:59:41.328+02:00 DEBUG 16660 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-10-24T15:10:16.944+02:00 DEBUG 16320 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-24T15:10:17.307+02:00 DEBUG 16320 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24T15:10:17.442+02:00 DEBUG 16320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-10-24T15:10:17.466+02:00 DEBUG 16320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-24T15:10:17.480+02:00 DEBUG 16320 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24T15:10:19.923+02:00  INFO 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T15:10:19.925+02:00 DEBUG 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-24T15:10:19.926+02:00 DEBUG 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-24T15:10:19.927+02:00 DEBUG 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-24T15:10:19.929+02:00 DEBUG 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1bffe40f
+2023-10-24T15:10:19.931+02:00 DEBUG 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7a0dd318
+2023-10-24T15:10:19.932+02:00 DEBUG 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24T15:10:19.933+02:00  INFO 16320 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-10-24T15:10:30.427+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/addperson", parameters={}
+2023-10-24T15:10:30.456+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-24T15:10:30.462+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-10-24T15:10:30.464+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-10-24T15:10:30.497+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T15:10:30.509+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T15:10:30.547+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:10:30.548+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 15:10:30 CEST 2023, status=404, error=Not Found, path=/addperson}]
+2023-10-24T15:10:30.577+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-10-24T15:11:35.202+02:00 DEBUG 16320 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:11:35.211+02:00  WARN 16320 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-10-24T15:11:35.213+02:00 DEBUG 16320 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2023-10-24T15:11:35.217+02:00 DEBUG 16320 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T15:11:35.225+02:00 DEBUG 16320 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T15:11:35.228+02:00 DEBUG 16320 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:11:35.229+02:00 DEBUG 16320 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 15:11:35 CEST 2023, status=405, error=Method Not Allowed, path=/person}]
+2023-10-24T15:11:35.232+02:00 DEBUG 16320 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2023-10-24T15:15:17.526+02:00 DEBUG 16320 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:15:17.527+02:00  WARN 16320 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-10-24T15:15:17.529+02:00 DEBUG 16320 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2023-10-24T15:15:17.531+02:00 DEBUG 16320 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T15:15:17.534+02:00 DEBUG 16320 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T15:15:17.536+02:00 DEBUG 16320 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:15:17.538+02:00 DEBUG 16320 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 15:15:17 CEST 2023, status=405, error=Method Not Allowed, path=/person}]
+2023-10-24T15:15:17.541+02:00 DEBUG 16320 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2023-10-24T15:17:31.063+02:00 DEBUG 16320 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/person", parameters={}
+2023-10-24T15:17:31.068+02:00 DEBUG 16320 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.openclassroom.SafetyNetAlertsEndOfMission.controller.PersonController#persons()
+2023-10-24T15:17:31.075+02:00 DEBUG 16320 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:17:31.089+02:00 DEBUG 16320 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Person(firstName=John, lastName=Boyd, address=1509 Culver St, city=Culver, zip=97451, phone=841-874 (truncated)...]
+2023-10-24T15:17:31.107+02:00 DEBUG 16320 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-24T15:17:43.472+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:17:43.475+02:00  WARN 16320 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-10-24T15:17:43.477+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2023-10-24T15:17:43.482+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T15:17:43.501+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T15:17:43.507+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:17:43.508+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 15:17:43 CEST 2023, status=405, error=Method Not Allowed, path=/person}]
+2023-10-24T15:17:43.510+02:00 DEBUG 16320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2023-10-24T15:17:56.109+02:00 DEBUG 16320 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:17:56.111+02:00  WARN 16320 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-10-24T15:17:56.112+02:00 DEBUG 16320 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2023-10-24T15:17:56.114+02:00 DEBUG 16320 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T15:17:56.117+02:00 DEBUG 16320 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T15:17:56.119+02:00 DEBUG 16320 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:17:56.121+02:00 DEBUG 16320 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 15:17:56 CEST 2023, status=405, error=Method Not Allowed, path=/person}]
+2023-10-24T15:17:56.123+02:00 DEBUG 16320 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2023-10-24T15:18:55.610+02:00 DEBUG 16320 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:18:55.611+02:00  WARN 16320 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-10-24T15:18:55.612+02:00 DEBUG 16320 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2023-10-24T15:18:55.615+02:00 DEBUG 16320 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T15:18:55.616+02:00 DEBUG 16320 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T15:18:55.617+02:00 DEBUG 16320 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:18:55.618+02:00 DEBUG 16320 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 15:18:55 CEST 2023, status=405, error=Method Not Allowed, path=/person}]
+2023-10-24T15:18:55.620+02:00 DEBUG 16320 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2023-10-24T15:20:53.076+02:00 DEBUG 16320 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:20:53.078+02:00  WARN 16320 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2023-10-24T15:20:53.079+02:00 DEBUG 16320 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2023-10-24T15:20:53.080+02:00 DEBUG 16320 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-10-24T15:20:53.088+02:00 DEBUG 16320 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-24T15:20:53.091+02:00 DEBUG 16320 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:20:53.093+02:00 DEBUG 16320 --- [http-nio-8080-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Oct 24 15:20:53 CEST 2023, status=405, error=Method Not Allowed, path=/person}]
+2023-10-24T15:20:53.097+02:00 DEBUG 16320 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2023-10-24T15:51:22.403+02:00 DEBUG 19404 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-24T15:51:22.832+02:00 DEBUG 19404 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24T15:51:22.989+02:00 DEBUG 19404 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-10-24T15:51:23.020+02:00 DEBUG 19404 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-24T15:51:23.036+02:00 DEBUG 19404 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24T15:51:25.606+02:00  INFO 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T15:51:25.607+02:00 DEBUG 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-24T15:51:25.609+02:00 DEBUG 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-24T15:51:25.609+02:00 DEBUG 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-24T15:51:25.610+02:00 DEBUG 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@35c5b389
+2023-10-24T15:51:25.612+02:00 DEBUG 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@61141eaf
+2023-10-24T15:51:25.613+02:00 DEBUG 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24T15:51:25.614+02:00  INFO 19404 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2023-10-24T15:51:35.138+02:00 DEBUG 19404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:51:35.160+02:00 DEBUG 19404 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.openclassroom.SafetyNetAlertsEndOfMission.controller.PersonController#addPerson(Person)
+2023-10-24T15:51:35.230+02:00 DEBUG 19404 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Person(firstName=Johna, lastName=Boyd, address=1509 Culver St, city=Culver, zip=97451, phone=841-874 (truncated)...]
+2023-10-24T15:51:35.256+02:00 DEBUG 19404 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-10-24T15:51:35.259+02:00 DEBUG 19404 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Personne ajoutée : Johna Boyd"]
+2023-10-24T15:51:35.276+02:00 DEBUG 19404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-24T15:57:12.625+02:00 DEBUG 19364 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2023-10-24T15:57:13.055+02:00 DEBUG 19364 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-24T15:57:13.189+02:00 DEBUG 19364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-10-24T15:57:13.216+02:00 DEBUG 19364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-24T15:57:13.229+02:00 DEBUG 19364 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-24T15:57:15.872+02:00  INFO 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-24T15:57:15.873+02:00 DEBUG 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-24T15:57:15.874+02:00 DEBUG 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-24T15:57:15.874+02:00 DEBUG 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-24T15:57:15.875+02:00 DEBUG 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6e360e40
+2023-10-24T15:57:15.877+02:00 DEBUG 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@384d1d3a
+2023-10-24T15:57:15.878+02:00 DEBUG 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-24T15:57:15.879+02:00  INFO 19364 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-10-24T15:57:40.189+02:00 DEBUG 19364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/person", parameters={}
+2023-10-24T15:57:40.208+02:00 DEBUG 19364 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.openclassroom.SafetyNetAlertsEndOfMission.controller.PersonController#addPerson(Person)
+2023-10-24T15:57:40.263+02:00 DEBUG 19364 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Person(firstName=Johna, lastName=Boydo, address=1510 Culver St, city=Culver, zip=97451, phone=841-87 (truncated)...]
+2023-10-24T15:57:40.295+02:00 DEBUG 19364 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-10-24T15:57:40.300+02:00 DEBUG 19364 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Personne ajoutée : Johna Boydo 1510 Culver St Culver 97451 841-874-6513 jaboyd@email.com"]
+2023-10-24T15:57:40.318+02:00 DEBUG 19364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-24T15:57:55.130+02:00 DEBUG 19364 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/person", parameters={}
+2023-10-24T15:57:55.136+02:00 DEBUG 19364 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.openclassroom.SafetyNetAlertsEndOfMission.controller.PersonController#persons()
+2023-10-24T15:57:55.137+02:00 DEBUG 19364 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:57:55.139+02:00 DEBUG 19364 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Person(firstName=John, lastName=Boyd, address=1509 Culver St, city=Culver, zip=97451, phone=841-874 (truncated)...]
+2023-10-24T15:57:55.151+02:00 DEBUG 19364 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-24T15:58:34.795+02:00 DEBUG 19364 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/person", parameters={}
+2023-10-24T15:58:34.796+02:00 DEBUG 19364 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.openclassroom.SafetyNetAlertsEndOfMission.controller.PersonController#persons()
+2023-10-24T15:58:34.798+02:00 DEBUG 19364 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-24T15:58:34.799+02:00 DEBUG 19364 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Person(firstName=John, lastName=Boyd, address=1509 Culver St, city=Culver, zip=97451, phone=841-874 (truncated)...]
+2023-10-24T15:58:34.802+02:00 DEBUG 19364 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
